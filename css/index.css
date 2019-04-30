@@ -81,10 +81,17 @@ h1, h2, h3, h4, h5 {
 	margin: auto;
 }
 
+.services-header-container{
+	max-width: 975px;
+	margin: auto;
+}
+
 header{
 	display: flex;
 	justify-content: space-between;
 	padding: 20px 50px 0 50px;
+	max-width: 975px;
+	margin: auto;
 }
 
 header nav{
@@ -175,6 +182,9 @@ footer{
 	text-align: center;
 }
 
+.services-header-container header nav{
+	margin-bottom: 15px;
+}
 
 .services-intro{
 	display: flex;
@@ -191,16 +201,20 @@ footer{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .services-content div{
-	align-content: center;
-	margin: 20px;
-	width: 397px;
+	margin: 20px 0 20px 0;
+	width: 49%;
 	padding: 16px;
 	line-height: 0.5cm;
 	background-color: #F4F3F4;
 	border: 1px solid black;
+}
+
+.services-header-img{
+	width: 100%;
 }
 
 .services-content button{
@@ -214,7 +228,6 @@ footer{
 .fact-about{
 	display: flex;
 	align-items: center;
-	flex-wrap: wrap;
 	padding-bottom: 100px;
 	padding-top: 30px;
 }
@@ -264,7 +277,11 @@ hr{
 
 	header .logo{
 		margin-left: 0px;
-		margin-top: 12px;
+		margin-top: 4px;
+		align-self: center;
+	}
+
+	.services-header-container a{
 		align-self: center;
 	}
 
@@ -293,7 +310,7 @@ hr{
 	}
 
 	.banner-top{
-		margin: 75px 0px 30px 0px;
+		margin: 60px 0px 20px 0px;
 	}
 
 
@@ -316,6 +333,22 @@ hr{
 		line-height: 18px;
 	}
 
+	.services-content div{
+		width: 100%; 
+	}
+	.services-header-img{
+		width: 100%;
+	}
+
+	.fact-about-content{
+		width: 100%;
+	}
+
+	.fact-about-img img{
+		width:100%;
+		height: auto;
+	}
+
 	.contact{
 		padding-top: 30px;
 	}
@@ -325,7 +358,7 @@ hr{
 		.container{
 			padding-top: 0px;
 		}
-
+		
 		header{
 			padding: 16px 0 0;
 		}
@@ -345,12 +378,26 @@ hr{
 			border-top: 1px solid grey;
 		}
 
+		.services-header-container header nav a{
+			font-size: 20px;
+			font-weight: bold;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			border-top: 1px solid grey;
+			width: 100%;
+		}
+
+		.services-logo{
+			margin-top: 4px;
+			margin-bottom: 20px;
+		}
+
 		.logo{
-			margin-bottom: 12px;
+			margin-bottom: 22px;
 		}
 
 		.banner{
-			padding-bottom: 40px;
+			padding-bottom: 65px;
 		}
 
 		.banner-top{
@@ -385,6 +432,10 @@ hr{
 
 		.contact div{
 			margin-bottom: 15px;
+		}
+
+		.fact-about-img img{
+			display: none;
 		}
 
 		footer {
