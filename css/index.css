@@ -70,30 +70,33 @@ h1, h2, h3, h4, h5 {
 
 
 .container{
-	width: 975px;
+	max-width: 975px;
 	margin: auto;
 	padding: 50px;
+	padding-top: 20px;
 }
 
 header{
 	display: flex;
+	justify-content: space-between;
+	padding: 20px 50px 0 50px;
 }
 
 header nav{
 	display: flex;
 	margin-top: 15px;
 	margin-bottom: 60px;
+	width: 100%;
+	justify-content: space-evenly;
 } 
 
 header nav a{
-	margin: 0 27px;
 	color:rgb(131, 131, 131);
 	font-size: 15px;
 	text-decoration: none;
 }
 
 header .logo{
-	margin-left: 80px;
 	align-self: flex-start;
 }	
 
@@ -110,6 +113,8 @@ header .logo{
 .banner{
 	display: flex;
 	padding-bottom: 100px;
+	width: 100%;
+	justify-content: space-between;
 }
 
 .banner-top{
@@ -145,20 +150,19 @@ header .logo{
 	 line-height: 18px;
  }
 
-.header-img{
-	margin-left: 70px;
+.middle-img{
+	width: 100%;
+	padding-bottom: 35px;
 }
 
-.middle-img{
-	padding-bottom: 35px;
+.contact{
+	display: flex;
+	flex-direction: column;
+	width: 25%;
 }
 
 .contact div{
 	margin-bottom: 25px;
-}
-
-.contact address{
-	width: 25%;
 }
 
 footer{
@@ -245,6 +249,7 @@ hr{
 	.container{
 		width: 100%;
 		padding: 20px;
+		padding-top: 15px;
 	}
 
 	header{
@@ -259,16 +264,13 @@ hr{
 	}
 
 	header nav{
-		display: flex;
 		margin-top: 40px;
-		align-self: center;
 		margin-bottom: 0px;
+		flex-wrap: wrap;
 	}
 
 	header nav a{
 		font-size: 15px;
-		margin-left: 38px;
-		margin-right: 38px;
 	}
 
 	.header-img{
@@ -281,7 +283,7 @@ hr{
 
 	.banner{
 		display: flex;
-		padding-bottom: 70px;
+		padding-bottom: 55px;
 		justify-content: center;
 	}
 
@@ -311,6 +313,80 @@ hr{
 
 	.contact{
 		padding-top: 30px;
+	}
+
+	@media (max-width: 500px){
+
+		.container{
+			padding-top: 0px;
+		}
+
+		header{
+			padding: 16px 0 0;
+		}
+
+		header nav{
+			margin-top: 0px;
+			flex-direction: column;
+			text-align: center;
+			border-bottom: 1px solid grey;
+		}
+
+		header nav a{
+			font-size: 20px;
+			font-weight: bold;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			border-top: 1px solid grey;
+		}
+
+		.logo{
+			margin-bottom: 12px;
+		}
+
+		.banner{
+			padding-bottom: 40px;
+		}
+
+		.banner-top{
+			font-size: 70px;
+		}
+
+		.main-content{
+			flex-direction: column;
+			padding-top: 22px;
+		}
+
+		.main-content div{
+			width: 100%;
+			padding-bottom: 15px;
+		}
+
+		.middle-img{
+			padding-top: 36px;
+		}
+		.main-content-bottom{
+			flex-direction: column;
+		}
+
+		.main-content-bottom div{
+			width: 100%;
+			padding-bottom: 47px;
+		}
+
+		.contact{
+			width: 40%;
+		}
+
+		.contact div{
+			margin-bottom: 15px;
+		}
+
+		footer {
+			font-size: 16px;
+			padding-top: 25px;
+		}
+
 	}
 
 
